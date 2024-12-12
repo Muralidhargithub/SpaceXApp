@@ -72,4 +72,8 @@ extension MissionListViewController: UITableViewDataSource, UITableViewDelegate 
         detailVC.viewModel = detailViewModel
         navigationController?.pushViewController(detailVC, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }
