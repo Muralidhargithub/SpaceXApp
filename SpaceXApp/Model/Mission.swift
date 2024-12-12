@@ -34,9 +34,17 @@ struct Mission: Codable {
 
     struct MissionLinks: Codable {
         let missionPatch: String?
+        let articleLink: String?
+        let videoLink: String?
+        let wikipedia: String?
+        let reddit: String?
 
         private enum CodingKeys: String, CodingKey {
             case missionPatch = "mission_patch"
+            case articleLink = "article_link"
+            case videoLink = "video_link"
+            case wikipedia
+            case reddit = "reddit_media"
         }
     }
 
